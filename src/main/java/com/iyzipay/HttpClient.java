@@ -79,7 +79,7 @@ public class HttpClient {
                 prepareRequestBody(httpMethod, content, conn);
             }
 
-            return new String(body(conn), Charset.forName("UTF-8"));
+            return new String(body(conn), Charset.forName(DEFAULT_CHARSET));
         } catch (Exception e) {
             throw new HttpClientException(e.getMessage(), e);
         } finally {
