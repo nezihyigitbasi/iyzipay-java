@@ -105,8 +105,11 @@ public class HttpClient {
             try {
                 prepareOutputStream(content, output);
             } finally {
-                output.close();
-                content.close();
+                try {
+                    output.close();
+                } finally {
+                    content.close();
+                }
             }
         }
     }
