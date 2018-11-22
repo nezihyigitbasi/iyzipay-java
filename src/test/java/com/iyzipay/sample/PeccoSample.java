@@ -93,7 +93,6 @@ public class PeccoSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), peccoInitialize.getStatus());
         assertEquals(Locale.TR.getValue(), peccoInitialize.getLocale());
         assertEquals("123456789", peccoInitialize.getConversationId());
-        assertNotNull(peccoInitialize.getSystemTime());
         assertNull(peccoInitialize.getErrorCode());
         assertNull(peccoInitialize.getErrorMessage());
         assertNull(peccoInitialize.getErrorGroup());
@@ -114,7 +113,6 @@ public class PeccoSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), peccoPayment.getStatus());
         assertEquals(Locale.TR.getValue(), peccoPayment.getLocale());
         assertEquals("123456789", peccoPayment.getConversationId());
-        assertNotNull(peccoPayment.getSystemTime());
         assertNull(peccoPayment.getErrorCode());
         assertNull(peccoPayment.getErrorMessage());
         assertNull(peccoPayment.getErrorGroup());

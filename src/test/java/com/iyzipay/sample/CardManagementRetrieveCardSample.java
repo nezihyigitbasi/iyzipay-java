@@ -25,7 +25,6 @@ public class CardManagementRetrieveCardSample extends Sample {
 
         assertEquals(Status.SUCCESS.getValue(), cardManagementPageCard.getStatus());
         assertEquals(Locale.TR.getValue(), cardManagementPageCard.getLocale());
-        assertNotNull(cardManagementPageCard.getSystemTime());
         assertNull(cardManagementPageCard.getErrorCode());
         assertNull(cardManagementPageCard.getErrorMessage());
         assertNull(cardManagementPageCard.getErrorGroup());

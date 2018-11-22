@@ -24,7 +24,6 @@ public class ApproveSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), approval.getStatus());
         assertEquals(Locale.TR.getValue(), approval.getLocale());
         assertEquals("123456789", approval.getConversationId());
-        assertNotNull(approval.getSystemTime());
         assertNull(approval.getErrorCode());
         assertNull(approval.getErrorMessage());
         assertNull(approval.getErrorGroup());

@@ -24,7 +24,6 @@ public class DisapproveSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), disapproval.getStatus());
         assertEquals(Locale.TR.getValue(), disapproval.getLocale());
         assertEquals("123456789", disapproval.getConversationId());
-        assertNotNull(disapproval.getSystemTime());
         assertNull(disapproval.getErrorCode());
         assertNull(disapproval.getErrorMessage());
         assertNull(disapproval.getErrorGroup());

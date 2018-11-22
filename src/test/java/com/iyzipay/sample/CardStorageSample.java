@@ -33,7 +33,6 @@ public class CardStorageSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), card.getStatus());
         assertEquals(Locale.TR.getValue(), card.getLocale());
         assertEquals("123456789", card.getConversationId());
-        assertNotNull(card.getSystemTime());
         assertNull(card.getErrorCode());
         assertNull(card.getErrorMessage());
         assertNull(card.getErrorGroup());
@@ -72,7 +71,6 @@ public class CardStorageSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), card.getStatus());
         assertEquals(Locale.TR.getValue(), card.getLocale());
         assertEquals("123456789", card.getConversationId());
-        assertNotNull(card.getSystemTime());
         assertNull(card.getErrorCode());
         assertNull(card.getErrorMessage());
         assertNull(card.getErrorGroup());
@@ -104,7 +102,6 @@ public class CardStorageSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), card.getStatus());
         assertEquals(Locale.TR.getValue(), card.getLocale());
         assertEquals("123456789", card.getConversationId());
-        assertNotNull(card.getSystemTime());
         assertNull(card.getErrorCode());
         assertNull(card.getErrorMessage());
         assertNull(card.getErrorGroup());
@@ -135,7 +132,6 @@ public class CardStorageSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), cardList.getStatus());
         assertEquals(Locale.TR.getValue(), cardList.getLocale());
         assertEquals("123456789", cardList.getConversationId());
-        assertNotNull(cardList.getSystemTime());
         assertNull(cardList.getErrorCode());
         assertNull(cardList.getErrorMessage());
         assertNull(cardList.getErrorGroup());

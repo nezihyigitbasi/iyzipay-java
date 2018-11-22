@@ -34,7 +34,6 @@ public class CheckoutFormTest extends BaseTest {
 
         assertEquals(Status.SUCCESS.getValue(), checkoutFormInitialize.getStatus());
         assertEquals(Locale.TR.getValue(), checkoutFormInitialize.getLocale());
-        assertNotNull(checkoutFormInitialize.getSystemTime());
         assertNotNull(checkoutFormInitialize.getToken());
         assertNotNull(checkoutFormInitialize.getCheckoutFormContent());
     }
@@ -62,6 +61,5 @@ public class CheckoutFormTest extends BaseTest {
 
         assertNotNull(checkoutForm.getErrorMessage());
         assertEquals(Status.FAILURE.getValue(), checkoutForm.getStatus());
-        assertNotNull(checkoutForm.getSystemTime());
     }
 }

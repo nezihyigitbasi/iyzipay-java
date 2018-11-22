@@ -27,7 +27,6 @@ public class InstallmentSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), installmentInfo.getStatus());
         assertEquals(Locale.TR.getValue(), installmentInfo.getLocale());
         assertEquals("123456789", installmentInfo.getConversationId());
-        assertNotNull(installmentInfo.getSystemTime());
         assertNull(installmentInfo.getErrorCode());
         assertNull(installmentInfo.getErrorMessage());
         assertNull(installmentInfo.getErrorGroup());

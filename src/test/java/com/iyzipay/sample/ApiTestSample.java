@@ -18,7 +18,6 @@ public class ApiTestSample extends Sample {
 
         assertEquals(Status.SUCCESS.getValue(), iyzipayResource.getStatus());
         assertEquals(Locale.TR.getValue(), iyzipayResource.getLocale());
-        assertNotNull(iyzipayResource.getSystemTime());
         assertNull(iyzipayResource.getErrorCode());
         assertNull(iyzipayResource.getErrorMessage());
         assertNull(iyzipayResource.getErrorGroup());

@@ -101,7 +101,6 @@ public class CheckoutFormSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), checkoutFormInitialize.getStatus());
         assertEquals(Locale.TR.getValue(), checkoutFormInitialize.getLocale());
         assertEquals("123456789", checkoutFormInitialize.getConversationId());
-        assertNotNull(checkoutFormInitialize.getSystemTime());
         assertNull(checkoutFormInitialize.getErrorCode());
         assertNull(checkoutFormInitialize.getErrorMessage());
         assertNull(checkoutFormInitialize.getErrorGroup());
@@ -123,7 +122,6 @@ public class CheckoutFormSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), checkoutForm.getStatus());
         assertEquals(Locale.TR.getValue(), checkoutForm.getLocale());
         assertEquals("123456789", checkoutForm.getConversationId());
-        assertNotNull(checkoutForm.getSystemTime());
         assertNull(checkoutForm.getErrorCode());
         assertNull(checkoutForm.getErrorMessage());
         assertNull(checkoutForm.getErrorGroup());

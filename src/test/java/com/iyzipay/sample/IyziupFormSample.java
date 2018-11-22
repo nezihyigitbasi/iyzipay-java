@@ -80,7 +80,6 @@ public class IyziupFormSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), iyziupFormInitialize.getStatus());
         assertEquals(Locale.TR.getValue(), iyziupFormInitialize.getLocale());
         assertEquals("123456789", iyziupFormInitialize.getConversationId());
-        assertNotNull(iyziupFormInitialize.getSystemTime());
         assertNull(iyziupFormInitialize.getErrorCode());
         assertNull(iyziupFormInitialize.getErrorMessage());
         assertNull(iyziupFormInitialize.getErrorGroup());
@@ -184,7 +183,6 @@ public class IyziupFormSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), iyziupFormInitialize.getStatus());
         assertEquals(Locale.TR.getValue(), iyziupFormInitialize.getLocale());
         assertEquals("123456789", iyziupFormInitialize.getConversationId());
-        assertNotNull(iyziupFormInitialize.getSystemTime());
         assertNull(iyziupFormInitialize.getErrorCode());
         assertNull(iyziupFormInitialize.getErrorMessage());
         assertNull(iyziupFormInitialize.getErrorGroup());
@@ -205,7 +203,6 @@ public class IyziupFormSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), iyziupForm.getStatus());
         assertEquals(Locale.TR.getValue(), iyziupForm.getLocale());
         assertEquals("123456789", iyziupForm.getConversationId());
-        assertNotNull(iyziupForm.getSystemTime());
         assertNull(iyziupForm.getErrorCode());
         assertNull(iyziupForm.getErrorMessage());
         assertNull(iyziupForm.getErrorGroup());

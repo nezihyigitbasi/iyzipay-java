@@ -35,7 +35,6 @@ public class CancelTest extends BaseTest {
         assertEquals(new BigDecimal("1.10000000"), cancel.getPrice());
         assertEquals(Currency.TRY.name(), cancel.getCurrency());
         assertNotNull(cancel.getAuthCode());
-        assertNotNull(cancel.getSystemTime());
         assertNotNull(cancel.getHostReference());
         assertNull(cancel.getErrorCode());
         assertNull(cancel.getErrorMessage());
@@ -66,7 +65,6 @@ public class CancelTest extends BaseTest {
         assertEquals(new BigDecimal("1.10000000"), cancel.getPrice());
         assertEquals(Currency.TRY.name(), cancel.getCurrency());
         assertNotNull(cancel.getAuthCode());
-        assertNotNull(cancel.getSystemTime());
         assertNotNull(cancel.getHostReference());
         assertNull(cancel.getErrorCode());
         assertNull(cancel.getErrorMessage());

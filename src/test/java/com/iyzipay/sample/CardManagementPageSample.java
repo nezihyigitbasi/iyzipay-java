@@ -33,7 +33,6 @@ public class CardManagementPageSample extends Sample {
         assertEquals("123456789", cardManagementPageInitialize.getConversationId());
         assertNotNull(cardManagementPageInitialize.getToken());
         assertNotNull(cardManagementPageInitialize.getCardPageUrl());
-        assertNotNull(cardManagementPageInitialize.getSystemTime());
         assertNull(cardManagementPageInitialize.getErrorCode());
         assertNull(cardManagementPageInitialize.getErrorMessage());
         assertNull(cardManagementPageInitialize.getErrorGroup());

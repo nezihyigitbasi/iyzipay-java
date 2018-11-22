@@ -36,7 +36,6 @@ public class InstallmentTest extends BaseTest {
         assertNotNull(installmentInfo.getInstallmentDetails().get(0).getInstallmentPrices().get(0).getInstallmentNumber());
         assertNotNull(installmentInfo.getInstallmentDetails().get(0).getInstallmentPrices().get(0).getInstallmentPrice());
         assertNotNull(installmentInfo.getInstallmentDetails().get(0).getInstallmentPrices().get(0).getTotalPrice());
-        assertNotNull(installmentInfo.getSystemTime());
         assertNull(installmentInfo.getErrorCode());
         assertNull(installmentInfo.getErrorMessage());
         assertNull(installmentInfo.getErrorGroup());

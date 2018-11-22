@@ -32,7 +32,6 @@ public class PaymentTest extends BaseTest {
         assertNull(payment.getConnectorName());
         assertEquals(Locale.TR.getValue(), payment.getLocale());
         assertEquals(Status.SUCCESS.getValue(), payment.getStatus());
-        assertNotNull(payment.getSystemTime());
         assertNull(payment.getErrorCode());
         assertNull(payment.getErrorMessage());
         assertNull(payment.getErrorGroup());
@@ -65,7 +64,6 @@ public class PaymentTest extends BaseTest {
         assertNull(payment.getConnectorName());
         assertEquals(Locale.TR.getValue(), payment.getLocale());
         assertEquals(Status.SUCCESS.getValue(), payment.getStatus());
-        assertNotNull(payment.getSystemTime());
         assertNull(payment.getErrorCode());
         assertNull(payment.getErrorMessage());
         assertNull(payment.getErrorGroup());
@@ -110,7 +108,6 @@ public class PaymentTest extends BaseTest {
         assertNull(payment.getConnectorName());
         assertEquals(Locale.TR.getValue(), payment.getLocale());
         assertEquals(Status.SUCCESS.getValue(), payment.getStatus());
-        assertNotNull(payment.getSystemTime());
         assertEquals("123456789", payment.getConversationId());
         assertNull(payment.getErrorCode());
         assertNull(payment.getErrorMessage());
@@ -150,7 +147,6 @@ public class PaymentTest extends BaseTest {
         assertEquals("123456789", payment.getConversationId());
         assertEquals(createdPayment.getPaymentId(), payment.getPaymentId());
         assertEquals("0008", createdPayment.getLastFourDigits());
-        assertNotNull(payment.getSystemTime());
         assertNotNull(payment.getHostReference());
         assertNull(payment.getErrorCode());
         assertNull(payment.getErrorMessage());

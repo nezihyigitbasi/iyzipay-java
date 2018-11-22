@@ -23,7 +23,6 @@ public class CancelSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), cancel.getStatus());
         assertEquals(Locale.TR.getValue(), cancel.getLocale());
         assertEquals("123456789", cancel.getConversationId());
-        assertNotNull(cancel.getSystemTime());
         assertNull(cancel.getErrorCode());
         assertNull(cancel.getErrorMessage());
         assertNull(cancel.getErrorGroup());
@@ -46,7 +45,6 @@ public class CancelSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), cancel.getStatus());
         assertEquals(Locale.TR.getValue(), cancel.getLocale());
         assertEquals("123456789", cancel.getConversationId());
-        assertNotNull(cancel.getSystemTime());
         assertNull(cancel.getErrorCode());
         assertNull(cancel.getErrorMessage());
         assertNull(cancel.getErrorGroup());
@@ -69,7 +67,6 @@ public class CancelSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), cancel.getStatus());
         assertEquals(Locale.TR.getValue(), cancel.getLocale());
         assertEquals("123456789", cancel.getConversationId());
-        assertNotNull(cancel.getSystemTime());
         assertNull(cancel.getErrorCode());
         assertNull(cancel.getErrorMessage());
         assertNull(cancel.getErrorGroup());

@@ -34,7 +34,6 @@ public class SubMerchantSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), subMerchant.getStatus());
         assertEquals(Locale.TR.getValue(), subMerchant.getLocale());
         assertEquals("123456789", subMerchant.getConversationId());
-        assertNotNull(subMerchant.getSystemTime());
         assertNull(subMerchant.getErrorCode());
         assertNull(subMerchant.getErrorMessage());
         assertNull(subMerchant.getErrorGroup());
@@ -64,7 +63,6 @@ public class SubMerchantSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), subMerchant.getStatus());
         assertEquals(Locale.TR.getValue(), subMerchant.getLocale());
         assertEquals("123456789", subMerchant.getConversationId());
-        assertNotNull(subMerchant.getSystemTime());
         assertNull(subMerchant.getErrorCode());
         assertNull(subMerchant.getErrorMessage());
         assertNull(subMerchant.getErrorGroup());
@@ -94,7 +92,6 @@ public class SubMerchantSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), subMerchant.getStatus());
         assertEquals(Locale.TR.getValue(), subMerchant.getLocale());
         assertEquals("123456789", subMerchant.getConversationId());
-        assertNotNull(subMerchant.getSystemTime());
         assertNull(subMerchant.getErrorCode());
         assertNull(subMerchant.getErrorMessage());
         assertNull(subMerchant.getErrorGroup());
@@ -123,7 +120,6 @@ public class SubMerchantSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), subMerchant.getStatus());
         assertEquals(Locale.TR.getValue(), subMerchant.getLocale());
         assertEquals("123456789", subMerchant.getConversationId());
-        assertNotNull(subMerchant.getSystemTime());
         assertNull(subMerchant.getErrorCode());
         assertNull(subMerchant.getErrorMessage());
         assertNull(subMerchant.getErrorGroup());
@@ -152,7 +148,6 @@ public class SubMerchantSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), subMerchant.getStatus());
         assertEquals(Locale.TR.getValue(), subMerchant.getLocale());
         assertEquals("123456789", subMerchant.getConversationId());
-        assertNotNull(subMerchant.getSystemTime());
         assertNull(subMerchant.getErrorCode());
         assertNull(subMerchant.getErrorMessage());
         assertNull(subMerchant.getErrorGroup());
@@ -181,7 +176,6 @@ public class SubMerchantSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), subMerchant.getStatus());
         assertEquals(Locale.TR.getValue(), subMerchant.getLocale());
         assertEquals("123456789", subMerchant.getConversationId());
-        assertNotNull(subMerchant.getSystemTime());
         assertNull(subMerchant.getErrorCode());
         assertNull(subMerchant.getErrorMessage());
         assertNull(subMerchant.getErrorGroup());
@@ -201,7 +195,6 @@ public class SubMerchantSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), subMerchant.getStatus());
         assertEquals(Locale.TR.getValue(), subMerchant.getLocale());
         assertEquals("123456789", subMerchant.getConversationId());
-        assertNotNull(subMerchant.getSystemTime());
         assertNull(subMerchant.getErrorCode());
         assertNull(subMerchant.getErrorMessage());
         assertNull(subMerchant.getErrorGroup());

@@ -28,7 +28,6 @@ public class PeccoTest extends BaseTest {
 
         assertEquals(Locale.TR.getValue(), peccoInitialize.getLocale());
         assertEquals(Status.SUCCESS.getValue(), peccoInitialize.getStatus());
-        assertNotNull(peccoInitialize.getSystemTime());
         assertNotNull(peccoInitialize.getHtmlContent());
         assertNull(peccoInitialize.getErrorCode());
         assertNull(peccoInitialize.getErrorMessage());

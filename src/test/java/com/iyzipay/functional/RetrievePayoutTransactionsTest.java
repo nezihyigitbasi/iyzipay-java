@@ -25,7 +25,6 @@ public class RetrievePayoutTransactionsTest extends BaseTest {
         assertEquals(Status.SUCCESS.getValue(), payoutCompletedTransactionList.getStatus());
         assertEquals(Locale.TR.getValue(), payoutCompletedTransactionList.getLocale());
         assertEquals("123456789", payoutCompletedTransactionList.getConversationId());
-        assertNotNull(payoutCompletedTransactionList.getSystemTime());
         assertNull(payoutCompletedTransactionList.getErrorCode());
         assertNull(payoutCompletedTransactionList.getErrorGroup());
         assertNull(payoutCompletedTransactionList.getErrorMessage());
@@ -45,7 +44,6 @@ public class RetrievePayoutTransactionsTest extends BaseTest {
         assertEquals(Status.SUCCESS.getValue(), bouncedBankTransferList.getStatus());
         assertEquals(Locale.TR.getValue(), bouncedBankTransferList.getLocale());
         assertEquals("123456789", bouncedBankTransferList.getConversationId());
-        assertNotNull(bouncedBankTransferList.getSystemTime());
         assertNull(bouncedBankTransferList.getErrorCode());
         assertNull(bouncedBankTransferList.getErrorGroup());
         assertNull(bouncedBankTransferList.getErrorMessage());

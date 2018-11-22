@@ -104,7 +104,6 @@ public class ThreedsSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), threedsInitialize.getStatus());
         assertEquals(Locale.TR.getValue(), threedsInitialize.getLocale());
         assertEquals("123456789", threedsInitialize.getConversationId());
-        assertNotNull(threedsInitialize.getSystemTime());
         assertNull(threedsInitialize.getErrorCode());
         assertNull(threedsInitialize.getErrorMessage());
         assertNull(threedsInitialize.getErrorGroup());
@@ -126,7 +125,6 @@ public class ThreedsSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), threedsPayment.getStatus());
         assertEquals(Locale.TR.getValue(), threedsPayment.getLocale());
         assertEquals("123456789", threedsPayment.getConversationId());
-        assertNotNull(threedsPayment.getSystemTime());
         assertNull(threedsPayment.getErrorCode());
         assertNull(threedsPayment.getErrorMessage());
         assertNull(threedsPayment.getErrorGroup());

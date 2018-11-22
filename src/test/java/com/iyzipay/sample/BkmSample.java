@@ -98,7 +98,6 @@ public class BkmSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), bkmInitialize.getStatus());
         assertEquals(Locale.TR.getValue(), bkmInitialize.getLocale());
         assertEquals("123456789", bkmInitialize.getConversationId());
-        assertNotNull(bkmInitialize.getSystemTime());
         assertNull(bkmInitialize.getErrorCode());
         assertNull(bkmInitialize.getErrorMessage());
         assertNull(bkmInitialize.getErrorGroup());
@@ -119,7 +118,6 @@ public class BkmSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), bkm.getStatus());
         assertEquals(Locale.TR.getValue(), bkm.getLocale());
         assertEquals("123456789", bkm.getConversationId());
-        assertNotNull(bkm.getSystemTime());
         assertNull(bkm.getErrorCode());
         assertNull(bkm.getErrorMessage());
         assertNull(bkm.getErrorGroup());

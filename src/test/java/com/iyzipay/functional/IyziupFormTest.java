@@ -38,7 +38,6 @@ public class IyziupFormTest extends IyziupBaseTest {
 
         assertEquals(Status.SUCCESS.getValue(), iyziupFormInitialize.getStatus());
         assertEquals(Locale.TR.getValue(), iyziupFormInitialize.getLocale());
-        assertNotNull(iyziupFormInitialize.getSystemTime());
         assertNotNull(iyziupFormInitialize.getToken());
         assertNotNull(iyziupFormInitialize.getContent());
     }
@@ -64,7 +63,6 @@ public class IyziupFormTest extends IyziupBaseTest {
 
         assertEquals(Status.SUCCESS.getValue(), iyziupFormInitialize.getStatus());
         assertEquals(Locale.TR.getValue(), iyziupFormInitialize.getLocale());
-        assertNotNull(iyziupFormInitialize.getSystemTime());
         assertNotNull(iyziupFormInitialize.getToken());
         assertNotNull(iyziupFormInitialize.getContent());
     }
@@ -95,7 +93,6 @@ public class IyziupFormTest extends IyziupBaseTest {
 
         assertNotNull(iyziupForm.getErrorMessage());
         assertEquals(Status.FAILURE.getValue(), iyziupForm.getStatus());
-        assertNotNull(iyziupForm.getSystemTime());
     }
 
     private InitialConsumer createDummyInitialConsumerData() {

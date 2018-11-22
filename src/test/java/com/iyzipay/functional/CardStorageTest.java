@@ -34,7 +34,6 @@ public class CardStorageTest extends BaseTest {
 
         assertEquals(Locale.TR.getValue(), card.getLocale());
         assertEquals(Status.SUCCESS.getValue(), card.getStatus());
-        assertNotNull(card.getSystemTime());
         assertEquals("123456789", card.getConversationId());
         assertEquals("email@email.com", card.getEmail());
         assertEquals("552879", card.getBinNumber());
@@ -69,7 +68,6 @@ public class CardStorageTest extends BaseTest {
 
         assertEquals(Locale.TR.getValue(), card.getLocale());
         assertEquals(Status.SUCCESS.getValue(), card.getStatus());
-        assertNotNull(card.getSystemTime());
         assertEquals("123456789", card.getConversationId());
         assertEquals("email@email.com", card.getEmail());
         assertEquals("552879", card.getBinNumber());
@@ -109,7 +107,6 @@ public class CardStorageTest extends BaseTest {
 
         assertEquals(Locale.TR.getValue(), card.getLocale());
         assertEquals(Status.SUCCESS.getValue(), card.getStatus());
-        assertNotNull(card.getSystemTime());
         assertEquals("123456789", card.getConversationId());
         assertEquals("552879", card.getBinNumber());
         assertEquals("card alias", card.getCardAlias());
@@ -135,7 +132,6 @@ public class CardStorageTest extends BaseTest {
 
         assertEquals(Status.SUCCESS.getValue(), deletedCard.getStatus());
         assertEquals(Locale.TR.getValue(), deletedCard.getLocale());
-        assertNotNull(deletedCard.getSystemTime());
         assertNull(deletedCard.getErrorCode());
         assertNull(deletedCard.getErrorMessage());
         assertNull(deletedCard.getErrorGroup());
@@ -168,7 +164,6 @@ public class CardStorageTest extends BaseTest {
         assertEquals(Status.SUCCESS.getValue(), cardList.getStatus());
         assertEquals(Locale.TR.getValue(), cardList.getLocale());
         assertEquals("123456789", cardList.getConversationId());
-        assertNotNull(cardList.getSystemTime());
         assertNull(cardList.getErrorCode());
         assertNull(cardList.getErrorMessage());
         assertNull(cardList.getErrorGroup());

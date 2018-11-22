@@ -103,7 +103,6 @@ public class PaymentSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), payment.getStatus());
         assertEquals(Locale.TR.getValue(), payment.getLocale());
         assertEquals("123456789", payment.getConversationId());
-        assertNotNull(payment.getSystemTime());
         assertNull(payment.getErrorCode());
         assertNull(payment.getErrorMessage());
         assertNull(payment.getErrorGroup());
@@ -205,7 +204,6 @@ public class PaymentSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), payment.getStatus());
         assertEquals(Locale.TR.getValue(), payment.getLocale());
         assertEquals("123456789", payment.getConversationId());
-        assertNotNull(payment.getSystemTime());
         assertNull(payment.getErrorCode());
         assertNull(payment.getErrorMessage());
         assertNull(payment.getErrorGroup());
@@ -297,7 +295,6 @@ public class PaymentSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), payment.getStatus());
         assertEquals(Locale.TR.getValue(), payment.getLocale());
         assertEquals("123456789", payment.getConversationId());
-        assertNotNull(payment.getSystemTime());
         assertNull(payment.getErrorCode());
         assertNull(payment.getErrorMessage());
         assertNull(payment.getErrorGroup());
@@ -318,7 +315,6 @@ public class PaymentSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), payment.getStatus());
         assertEquals(Locale.TR.getValue(), payment.getLocale());
         assertEquals("123456789", payment.getConversationId());
-        assertNotNull(payment.getSystemTime());
         assertNull(payment.getErrorCode());
         assertNull(payment.getErrorMessage());
         assertNull(payment.getErrorGroup());

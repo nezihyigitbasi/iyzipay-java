@@ -24,7 +24,6 @@ public class BinNumberSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), binNumber.getStatus());
         assertEquals(Locale.TR.getValue(), binNumber.getLocale());
         assertEquals("123456789", binNumber.getConversationId());
-        assertNotNull(binNumber.getSystemTime());
         assertNull(binNumber.getErrorCode());
         assertNull(binNumber.getErrorMessage());
         assertNull(binNumber.getErrorGroup());

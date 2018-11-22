@@ -40,7 +40,6 @@ public class IyziLinkTest extends BaseTest {
         assertEquals(Status.SUCCESS.getValue(), response.getStatus());
         assertEquals(Locale.TR.getValue(), response.getLocale());
         assertEquals("123456789", response.getConversationId());
-        assertNotNull(response.getSystemTime());
         assertNotNull(response.getData().getToken());
         assertNotNull(response.getData().getUrl());
         assertNotNull(response.getData().getImageUrl());
@@ -78,7 +77,6 @@ public class IyziLinkTest extends BaseTest {
         assertEquals(Status.SUCCESS.getValue(), response.getStatus());
         assertEquals(Locale.TR.getValue(), response.getLocale());
         assertEquals("123456789", response.getConversationId());
-        assertNotNull(response.getSystemTime());
         assertNotNull(response.getData().getToken());
         assertNotNull(response.getData().getUrl());
         assertNotNull(response.getData().getImageUrl());
@@ -114,7 +112,6 @@ public class IyziLinkTest extends BaseTest {
         assertEquals(Status.SUCCESS.getValue(), response.getStatus());
         assertEquals(Locale.TR.getValue(), response.getLocale());
         assertEquals("123456789", response.getConversationId());
-        assertNotNull(response.getSystemTime());
         assertEquals(1, response.getData().getIyziLinkItems().size());
         assertEquals(new Integer(1), response.getData().getCurrentPage());
     }
@@ -147,7 +144,6 @@ public class IyziLinkTest extends BaseTest {
         assertEquals(Status.SUCCESS.getValue(), response.getStatus());
         assertEquals(Locale.TR.getValue(), response.getLocale());
         assertEquals("123456789", response.getConversationId());
-        assertNotNull(response.getSystemTime());
         assertEquals("ft-name", response.getData().getName());
         assertEquals("ft-description", response.getData().getDescription());
         assertEquals(new BigDecimal("1.00000000"), response.getData().getPrice());
@@ -187,6 +183,5 @@ public class IyziLinkTest extends BaseTest {
         assertEquals(Status.SUCCESS.getValue(), response.getStatus());
         assertEquals(Locale.TR.getValue(), response.getLocale());
         assertEquals("123456789", response.getConversationId());
-        assertNotNull(response.getSystemTime());
     }
 }

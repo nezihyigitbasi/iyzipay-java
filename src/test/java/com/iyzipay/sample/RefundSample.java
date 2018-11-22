@@ -27,7 +27,6 @@ public class RefundSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), refund.getStatus());
         assertEquals(Locale.TR.getValue(), refund.getLocale());
         assertEquals("123456789", refund.getConversationId());
-        assertNotNull(refund.getSystemTime());
         assertNull(refund.getErrorCode());
         assertNull(refund.getErrorMessage());
         assertNull(refund.getErrorGroup());
@@ -52,7 +51,6 @@ public class RefundSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), refund.getStatus());
         assertEquals(Locale.TR.getValue(), refund.getLocale());
         assertEquals("123456789", refund.getConversationId());
-        assertNotNull(refund.getSystemTime());
         assertNull(refund.getErrorCode());
         assertNull(refund.getErrorMessage());
         assertNull(refund.getErrorGroup());
@@ -77,7 +75,6 @@ public class RefundSample extends Sample {
         assertEquals(Status.SUCCESS.getValue(), refund.getStatus());
         assertEquals(Locale.TR.getValue(), refund.getLocale());
         assertEquals("123456789", refund.getConversationId());
-        assertNotNull(refund.getSystemTime());
         assertNull(refund.getErrorCode());
         assertNull(refund.getErrorMessage());
         assertNull(refund.getErrorGroup());

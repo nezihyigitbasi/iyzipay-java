@@ -40,7 +40,6 @@ public class DisapproveTest extends BaseTest {
         assertEquals(paymentTransactionId, disapproval.getPaymentTransactionId());
         assertEquals(Status.SUCCESS.getValue(), disapproval.getStatus());
         assertEquals(Locale.TR.getValue(), disapproval.getLocale());
-        assertNotNull(disapproval.getSystemTime());
         assertNull(disapproval.getErrorCode());
         assertNull(disapproval.getErrorMessage());
         assertNull(disapproval.getErrorGroup());

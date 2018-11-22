@@ -25,7 +25,6 @@ public class ThreedsTest extends BaseTest {
 
         assertEquals(Locale.TR.getValue(), threedsInitialize.getLocale());
         assertEquals(Status.SUCCESS.getValue(), threedsInitialize.getStatus());
-        assertNotNull(threedsInitialize.getSystemTime());
         assertNotNull(threedsInitialize.getHtmlContent());
         assertNull(threedsInitialize.getErrorCode());
         assertNull(threedsInitialize.getErrorMessage());
@@ -51,7 +50,6 @@ public class ThreedsTest extends BaseTest {
 
         assertEquals(Locale.TR.getValue(), threedsInitialize.getLocale());
         assertEquals(Status.SUCCESS.getValue(), threedsInitialize.getStatus());
-        assertNotNull(threedsInitialize.getSystemTime());
         assertNotNull(threedsInitialize.getHtmlContent());
         assertNull(threedsInitialize.getErrorCode());
         assertNull(threedsInitialize.getErrorMessage());
