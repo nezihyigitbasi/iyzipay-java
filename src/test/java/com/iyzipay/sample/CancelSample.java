@@ -2,10 +2,7 @@ package com.iyzipay.sample;
 
 import com.iyzipay.model.*;
 import com.iyzipay.request.CreateCancelRequest;
-import com.iyzipay.request.CreateRefundRequest;
 import org.junit.Test;
-
-import java.math.BigDecimal;
 
 import static org.junit.Assert.*;
 

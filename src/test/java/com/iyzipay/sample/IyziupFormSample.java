@@ -2,7 +2,6 @@ package com.iyzipay.sample;
 
 import com.iyzipay.model.*;
 import com.iyzipay.request.CreateIyziupFormInitializeRequest;
-import com.iyzipay.request.RetrieveCheckoutFormRequest;
 import com.iyzipay.request.RetrieveIyziupFormRequest;
 import org.junit.Test;
 
