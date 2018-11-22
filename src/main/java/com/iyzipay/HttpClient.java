@@ -131,23 +131,21 @@ public class HttpClient {
         } else {
             input = conn.getInputStream();
         }
-        final byte[] body;
-        if (input == null) {
-            body = new byte[0];
-        } else {
-            try {
 
-                final byte[] buffer = new byte[8192];
-                final ByteArrayOutputStream output = new ByteArrayOutputStream();
-                for (int bytes = input.read(buffer); bytes != -1;
-                     bytes = input.read(buffer)) {
-                    output.write(buffer, 0, bytes);
-                }
-                body = output.toByteArray();
-            } finally {
-                input.close();
-            }
+        if (input == null) {
+            return new byte[0];
         }
-        return body;
+
+        try {
+            final byte[] buffer = new byte[8192];
+            final ByteArrayOutputStream output = new ByteArrayOutputStream();
+            for (int bytes = input.read(buffer); bytes != -1;
+                 bytes = input.read(buffer)) {
+                output.write(buffer, 0, bytes);
+            }
+            return output.toByteArray();
+        } finally {
+            input.close();
+        }
     }
 }
