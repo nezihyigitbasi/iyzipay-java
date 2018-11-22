@@ -20,7 +20,8 @@ public class CardManagementPageTest extends BaseTest {
     }
 
     @Test
-    public void should_initialize_card_management_page() throws Exception {
+    public void should_initialize_card_management_page()
+    {
         CreateCardManagementPageInitializeRequest request = CardManagementPageRequestBuilder.create().build();
 
         CardManagementPageInitialize cardManagementPageInitialize = CardManagementPageInitialize.create(request, options);
@@ -39,7 +40,8 @@ public class CardManagementPageTest extends BaseTest {
     }
 
     @Test
-    public void should_not_initialize_card_management_page_when_callbackUrl_not_exist() throws Exception {
+    public void should_not_initialize_card_management_page_when_callbackUrl_not_exist()
+    {
         CreateCardManagementPageInitializeRequest request = CardManagementPageRequestBuilder.create().callbackUrl("").build();
 
         CardManagementPageInitialize cardManagementPageInitialize = CardManagementPageInitialize.create(request, options);
