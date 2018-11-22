@@ -19,14 +19,26 @@ public class HttpClient {
     private static final String APPLICATION_JSON = "application/json";
     private static final String CONTENT_TYPE = "Content-Type";
     private static final String ACCEPT = "Accept";
-    private static final int TIMEOUT = 140000;
+    private static final int DEFAULT_TIMEOUT_MILLIS = 140000;
     private static final IyzipaySSLSocketFactory socketFactory = IyzipaySSLSocketFactory.getInstance();
 
-    private HttpClient() {
+    private final int timeoutMillis;
+
+    private HttpClient(int timeoutMillis) {
+        this.timeoutMillis = timeoutMillis;
     }
 
     public static HttpClient create() {
-        return new HttpClient();
+        return new HttpClient(DEFAULT_TIMEOUT_MILLIS);
+    }
+
+    /**
+     * Create an HttpClient instance with the specified timeout value in milliseconds.
+     * @param timeoutMillis specifies the timeout in milliseconds for read and connect timeouts.
+     * A timeout of zero is interpreted as an infinite timeout.
+     */
+    public static HttpClient create(int timeoutMillis) {
+        return new HttpClient(timeoutMillis);
     }
 
     public <T> T get(String url, Class<T> responseType) {
@@ -69,8 +81,8 @@ public class HttpClient {
             conn.setSSLSocketFactory(socketFactory);
             conn.setRequestMethod(httpMethod.name());
 
-            conn.setConnectTimeout(TIMEOUT);
-            conn.setReadTimeout(TIMEOUT);
+            conn.setConnectTimeout(timeoutMillis);
+            conn.setReadTimeout(timeoutMillis);
             conn.setUseCaches(false);
             conn.setInstanceFollowRedirects(false);
 
