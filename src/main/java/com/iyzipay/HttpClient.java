@@ -99,17 +99,19 @@ public class HttpClient {
     }
 
     private void prepareRequestBody(HttpMethod httpMethod, InputStream content, HttpURLConnection conn) throws IOException {
-        if (HttpMethod.isValidRequestFor(httpMethod)) {
-            conn.setDoOutput(true);
-            final OutputStream output = conn.getOutputStream();
+        if (!HttpMethod.isValidRequestFor(httpMethod)) {
+            throw new IllegalArgumentException(httpMethod + " is not a supported HTTP method");
+        }
+
+        conn.setDoOutput(true);
+        final OutputStream output = conn.getOutputStream();
+        try {
+            prepareOutputStream(content, output);
+        } finally {
             try {
-                prepareOutputStream(content, output);
+                output.close();
             } finally {
-                try {
-                    output.close();
-                } finally {
-                    content.close();
-                }
+                content.close();
             }
         }
     }
