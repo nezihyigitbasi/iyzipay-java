@@ -7,7 +7,6 @@ import javax.net.ssl.HttpsURLConnection;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
@@ -63,11 +62,9 @@ public class HttpClient {
     }
 
     private String send(String url, HttpMethod httpMethod, InputStream content, Map<String, String> headers) {
-        URLConnection raw;
         HttpsURLConnection conn = null;
         try {
-            raw = new URL(url).openConnection();
-            conn = HttpsURLConnection.class.cast(raw);
+            conn = (HttpsURLConnection) new URL(url).openConnection();
 
             conn.setSSLSocketFactory(socketFactory);
             conn.setRequestMethod(httpMethod.name());
