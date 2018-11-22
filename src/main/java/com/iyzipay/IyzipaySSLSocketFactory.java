@@ -4,6 +4,7 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
+
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -17,7 +18,7 @@ public class IyzipaySSLSocketFactory extends SSLSocketFactory {
     private static final IyzipaySSLSocketFactory instance = new IyzipaySSLSocketFactory();
     private static final String TLS_V12_PROTOCOL = "TLSv1.2";
 
-    private SSLSocketFactory defaultFactory;
+    private final SSLSocketFactory defaultFactory;
     private boolean tlsv12Supported;
 
     static IyzipaySSLSocketFactory getInstance() {
