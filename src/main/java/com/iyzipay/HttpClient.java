@@ -118,8 +118,9 @@ public class HttpClient {
 
     private void prepareOutputStream(InputStream content, OutputStream output) throws IOException {
         final byte[] buffer = new byte[8192];
-        for (int bytes = content.read(buffer); bytes != -1;
-             bytes = content.read(buffer)) {
+        BufferedInputStream bufferedInputStream = new BufferedInputStream(content);
+        for (int bytes = bufferedInputStream.read(buffer); bytes != -1;
+             bytes = bufferedInputStream.read(buffer)) {
             output.write(buffer, 0, bytes);
         }
     }
@@ -138,9 +139,10 @@ public class HttpClient {
 
         try {
             final byte[] buffer = new byte[8192];
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(input);
             final ByteArrayOutputStream output = new ByteArrayOutputStream();
-            for (int bytes = input.read(buffer); bytes != -1;
-                 bytes = input.read(buffer)) {
+            for (int bytes = bufferedInputStream.read(buffer); bytes != -1;
+                 bytes = bufferedInputStream.read(buffer)) {
                 output.write(buffer, 0, bytes);
             }
             return output.toByteArray();
